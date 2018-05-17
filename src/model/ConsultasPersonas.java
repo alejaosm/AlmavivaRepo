@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  *
@@ -52,8 +53,8 @@ public class ConsultasPersonas extends Conexion {
         PreparedStatement ps = null;
         Connection conexion = getConexion();
 
-        String sql = "UPDATE personas SET Nombres_Raz=?,Apellidos=?,Numero_Doc=?,Correo=?,Direccion=?,Telefono=?,Ubicacion=?,"
-                + "Rep_Legal=?,Estado=?,Tipo_Persona=?,Tipo_Doc=? WHERE Numero_Doc=?";
+        String sql = "UPDATE personas SET Nombres_Raz=?, Apellidos=?,Numero_Doc=?,Correo=?,Direccion=?,Telefono=?,Ubicacion=?,"
+                + "Rep_Legal=?,Estado=?,Tipo_Persona=?,Tipo_Doc=? WHERE Id_Persona=?";
         try {
             ps = conexion.prepareStatement(sql);
             ps.setString(1, per.getNombres_Raz());
@@ -67,6 +68,7 @@ public class ConsultasPersonas extends Conexion {
             ps.setInt(9, per.getEstado());
             ps.setInt(10, per.getTipo_Persona());
             ps.setInt(11, per.getTipo_Doc());
+            ps.setInt(12, per.getId_Persona());
             ps.execute();
             return true;
 
@@ -123,17 +125,19 @@ public class ConsultasPersonas extends Conexion {
             rs = ps.executeQuery();
 
             if (rs.next()) {  // si obtiene valores se agregan al modelo
+                
+                per.setId_Persona(rs.getInt("Id_Persona"));
                 per.setNombres_Raz(rs.getString("Nombres_Raz"));
                 per.setApellidos(rs.getString("Apellidos"));
-                per.setNumero_Doc(Integer.parseInt(rs.getString("Numero_Doc")));
+                per.setNumero_Doc(rs.getInt("Numero_Doc"));
                 per.setCorreo(rs.getString("Correo"));
                 per.setDireccion(rs.getString("Direccion"));
-                per.setTelefono(Integer.parseInt(rs.getString("Telefono")));
+                per.setTelefono(rs.getInt("Telefono"));
                 per.setUbicacion(rs.getString("Ubicacion"));
                 per.setRep_Legal(rs.getString("Rep_Legal"));
-                per.setEstado(Integer.parseInt(rs.getString("Estado")));
-                per.setEstado(Integer.parseInt(rs.getString("Tipo_Persona")));
-                per.setEstado(Integer.parseInt(rs.getString("Tipo_Doc")));
+                per.setEstado(rs.getInt("Estado"));
+                per.setTipo_Persona(rs.getInt("Tipo_Persona"));
+                per.setTipo_Doc(rs.getInt("Tipo_Doc"));
                 return true;
             }
             return false;
@@ -149,5 +153,28 @@ public class ConsultasPersonas extends Conexion {
             }
 
         }
+    }
+    
+    public static ArrayList<String> llenar_combo(TipoPer tip) {
+
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+
+        ArrayList<String> lista = new ArrayList<String>();
+        String q = "SELECT * FROM personas";
+        try {
+            rs = ps.executeQuery(q);
+            System.out.println("Correcto");
+
+        } catch (Exception e) {
+            System.out.println("No Correcto");
+        }
+        try {
+            while (rs.next()) {
+                lista.add(tip.getNom_Tipo_Persona());
+            }
+        } catch (Exception e) {
+        }
+        return lista;
     }
 }

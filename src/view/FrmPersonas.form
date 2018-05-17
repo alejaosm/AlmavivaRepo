@@ -31,48 +31,43 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="lblDireccion" max="32767" attributes="0"/>
-                          <Component id="lblTelefono" max="32767" attributes="0"/>
-                          <Component id="lblUbicacion" pref="69" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="txtDir" max="32767" attributes="0"/>
-                          <Component id="txtTel" max="32767" attributes="0"/>
-                          <Component id="txtUbicacion" alignment="0" pref="147" max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="lblTitle" alignment="0" pref="135" max="32767" attributes="0"/>
-                          <Component id="lblNombre" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblApellidos" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblCorreo" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblEstado" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblTipoId" alignment="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="lblTitle" alignment="0" pref="135" max="32767" attributes="0"/>
+                              <Component id="lblNombre" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblApellidos" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblCorreo" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblEstado" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblTipoId" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="jLabel1" alignment="0" min="-2" pref="106" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="list_Tip_Per" pref="146" max="32767" attributes="0"/>
-                          <Component id="txtNombre" max="32767" attributes="0"/>
-                          <Component id="txtApellidos" max="32767" attributes="0"/>
-                          <Component id="txtCorreo" max="32767" attributes="0"/>
-                          <Component id="lis_Esta" max="32767" attributes="0"/>
-                          <Component id="list_Tip_Doc" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="lblRepresent" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="txtRepresent" min="-2" pref="180" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="txtIdentificacion" min="-2" pref="146" max="-2" attributes="0"/>
+                          <Component id="txtID" pref="146" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="list_Tip_Per" pref="146" max="32767" attributes="0"/>
+                              <Component id="txtNombre" max="32767" attributes="0"/>
+                              <Component id="txtApellidos" max="32767" attributes="0"/>
+                              <Component id="txtCorreo" max="32767" attributes="0"/>
+                              <Component id="lis_Esta" max="32767" attributes="0"/>
+                              <Component id="list_Tip_Doc" max="32767" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="lblRepresent" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="txtRepresent" min="-2" pref="180" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="txtIdentificacion" min="-2" pref="146" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
                               <Component id="lblBuscar" min="-2" pref="54" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="txt_Search" min="-2" pref="152" max="-2" attributes="0"/>
@@ -97,29 +92,40 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="lblDireccion" max="32767" attributes="0"/>
+                  <Component id="lblTelefono" max="32767" attributes="0"/>
+                  <Component id="lblUbicacion" min="-2" pref="69" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="txtDir" max="32767" attributes="0"/>
+                  <Component id="txtTel" max="32767" attributes="0"/>
+                  <Component id="txtUbicacion" alignment="0" min="-2" pref="147" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblTitle" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="list_Tip_Per" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Component id="btn_Buscar" min="-2" pref="32" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblBuscar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_Search" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtID" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btn_Buscar" min="-2" pref="32" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="lblBuscar" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txt_Search" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblTitle" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="list_Tip_Per" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -150,12 +156,12 @@
                   <Component id="lblEstado" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jSeparator1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="lblDetalles" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="lblDetalles" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblDireccion" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtDir" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -170,7 +176,7 @@
                   </Group>
                   <Component id="txtUbicacion" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="20" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btn_Insertar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btn_Actualizar" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -191,18 +197,11 @@
     <Component class="javax.swing.JComboBox" name="list_Tip_Per">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
+          <StringArray count="0"/>
         </Property>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="list_Tip_PerActionPerformed"/>
-      </Events>
       <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;TipoPer&gt;"/>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
@@ -258,9 +257,6 @@
       </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="txtRepresent">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtRepresentActionPerformed"/>
-      </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
@@ -387,6 +383,19 @@
     <Component class="javax.swing.JButton" name="btn_Clear">
       <Properties>
         <Property name="text" type="java.lang.String" value="LIMPIAR"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ID"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtID">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
