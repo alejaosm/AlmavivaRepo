@@ -45,13 +45,13 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lblTitle" alignment="0" min="-2" pref="135" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="lblTitle" alignment="0" pref="135" max="32767" attributes="0"/>
                           <Component id="lblNombre" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblApellidos" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblCorreo" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblEstado" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblTipoId" alignment="0" min="-2" pref="93" max="-2" attributes="0"/>
+                          <Component id="lblTipoId" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -220,6 +220,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Apellidos"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="lblCorreo">
       <Properties>
@@ -250,6 +253,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Representante Legal"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JTextField" name="txtRepresent">
       <Events>
@@ -290,6 +296,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Direcci&#xf3;n"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="lblTelefono">
       <Properties>
@@ -335,16 +344,25 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="INSERTAR"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Actualizar">
       <Properties>
         <Property name="text" type="java.lang.String" value="ACTUALIZAR"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Eliminar">
       <Properties>
         <Property name="text" type="java.lang.String" value="ELIMINAR"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="lblBuscar">
       <Properties>
@@ -362,6 +380,9 @@
           <Image iconType="3" name="/Images/buscar.png"/>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="btn_Clear">
       <Properties>

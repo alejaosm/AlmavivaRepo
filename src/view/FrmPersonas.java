@@ -1,19 +1,18 @@
-
 package view;
 
 /**
  *
  * @author Maleja Gosman
  */
-
 public class FrmPersonas extends javax.swing.JFrame {
 
-   
     public FrmPersonas() {
         initComponents();
+        list_Tip_Per.removeAllItems();
+        list_Tip_Doc.removeAllItems();
+        lis_Esta.removeAllItems();
     }
 
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -124,13 +123,13 @@ public class FrmPersonas extends javax.swing.JFrame {
                             .addComponent(txtUbicacion, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(21, 21, 21)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
                             .addComponent(lblNombre)
                             .addComponent(lblApellidos)
                             .addComponent(lblCorreo)
                             .addComponent(lblEstado)
-                            .addComponent(lblTipoId, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblTipoId, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(list_Tip_Per, 0, 146, Short.MAX_VALUE)
@@ -235,16 +234,15 @@ public class FrmPersonas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void list_Tip_PerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_list_Tip_PerActionPerformed
-       
+
     }//GEN-LAST:event_list_Tip_PerActionPerformed
 
     private void txtRepresentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRepresentActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtRepresentActionPerformed
 
-  
     public static void main(String args[]) {
-       
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new FrmPersonas().setVisible(true);
@@ -253,20 +251,20 @@ public class FrmPersonas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_Actualizar;
-    private javax.swing.JButton btn_Buscar;
+    public javax.swing.JButton btn_Actualizar;
+    public javax.swing.JButton btn_Buscar;
     public javax.swing.JButton btn_Clear;
-    private javax.swing.JButton btn_Eliminar;
-    private javax.swing.JButton btn_Insertar;
+    public javax.swing.JButton btn_Eliminar;
+    public javax.swing.JButton btn_Insertar;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JLabel lblApellidos;
+    public javax.swing.JLabel lblApellidos;
     private javax.swing.JLabel lblBuscar;
     private javax.swing.JLabel lblCorreo;
     private javax.swing.JLabel lblDetalles;
-    private javax.swing.JLabel lblDireccion;
+    public javax.swing.JLabel lblDireccion;
     private javax.swing.JLabel lblEstado;
     private javax.swing.JLabel lblNombre;
-    private javax.swing.JLabel lblRepresent;
+    public javax.swing.JLabel lblRepresent;
     private javax.swing.JLabel lblTelefono;
     private javax.swing.JLabel lblTipoId;
     private javax.swing.JLabel lblTitle;

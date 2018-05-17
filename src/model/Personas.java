@@ -13,12 +13,12 @@ public class Personas {
     private int Numero_Doc;
     private String Correo;
     private String Direccion;
-    private String Telefono;
+    private int Telefono;
     private String Ubicacion;
     private String Rep_Legal;
-    private String Estado;
-    private String Tipo_Persona;
-    private String Tipo_Doc;
+    private int Estado;
+    private int Tipo_Persona;
+    private int Tipo_Doc;
 
     public int getId_Persona() {
         return Id_Persona;
@@ -68,11 +68,11 @@ public class Personas {
         this.Direccion = Direccion;
     }
 
-    public String getTelefono() {
+    public int getTelefono() {
         return Telefono;
     }
 
-    public void setTelefono(String Telefono) {
+    public void setTelefono(int Telefono) {
         this.Telefono = Telefono;
     }
 
@@ -92,32 +92,28 @@ public class Personas {
         this.Rep_Legal = Rep_Legal;
     }
 
-    public String getEstado() {
+    public int getEstado() {
         return Estado;
     }
 
-    public void setEstado(String Estado) {
+    public void setEstado(int Estado) {
         this.Estado = Estado;
     }
 
-    public String getTipo_Persona() {
+    public int getTipo_Persona() {
         return Tipo_Persona;
     }
 
-    public void setTipo_Persona(String Tipo_Persona) {
+    public void setTipo_Persona(int Tipo_Persona) {
         this.Tipo_Persona = Tipo_Persona;
     }
 
-    public String getTipo_Doc() {
+    public int getTipo_Doc() {
         return Tipo_Doc;
     }
 
-    public void setTipo_Doc(String Tipo_Doc) {
+    public void setTipo_Doc(int Tipo_Doc) {
         this.Tipo_Doc = Tipo_Doc;
     }
-    
-    
-    
-    
     
 }
